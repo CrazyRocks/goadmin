@@ -1,0 +1,37 @@
+</div>
+</div>
+<!-- General JS Scripts -->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="/stisla/js/stisla.js"></script>
+<!-- JS Libraies -->
+<script src="https://cdn.bootcss.com/sticky-kit/1.1.3/sticky-kit.min.js"></script>
+<script src="https://cdn.bootcss.com/jqgrid/4.6.0/js/i18n/grid.locale-cn.js"></script>
+<script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+<script src="https://cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<script src="https://cdn.bootcss.com/bootstrap-table/1.15.4/bootstrap-table.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-table/1.15.4/locale/bootstrap-table-zh-CN.js"></script>
+
+
+<!-- Page Specific JS File -->
+<!-- Template JS File -->
+<script src="/stisla/js/scripts.js"></script>
+<script src="/stisla/js/custom.js"></script>
+<script src="/modules/common.js"></script>
+<script type="text/javascript">
+    var pathname = window.location.pathname;
+    $(".nav-item").removeClass("active");
+    var parent = $('a[href="' + pathname + '"]').parent(".nav-item").addClass("active");
+    var y = $('a[href="' + pathname + '"]').offset().top;
+    console.log(y);
+    if (y > 500) {
+        $(".main-sidebar").animate({
+            scrollTop: y - 100
+        }, 100);
+    }
+</script>

@@ -1,0 +1,138 @@
+<div id="app">
+    <div class="main-wrapper">
+        <div class="navbar-bg"></div>
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <form class="form-inline mr-auto">
+                <ul class="navbar-nav mr-3">
+                    <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
+                                    class="fas fa-search"></i></a></li>
+                </ul>
+                <div class="search-element">
+                    <input class="form-control" type="search" placeholder="搜索" aria-label="Search" data-width="250">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                    <div class="search-backdrop"></div>
+                    <div class="search-result">
+                        <div class="search-header">
+                            搜索历史
+                        </div>
+                        <div class="search-item">
+                            <a href="#">怎么做小说爆款</a>
+                            <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <ul class="navbar-nav navbar-right">
+                <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+                                                             class="nav-link nav-link-lg message-toggle beep"><i
+                                class="far fa-envelope"></i></a>
+                    <div class="dropdown-menu dropdown-list dropdown-menu-right">
+                        <div class="dropdown-header">消息
+                            <div class="float-right">
+                                <a href="#">标记为全部阅读</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-list-content dropdown-list-message">
+                            <a href="#" class="dropdown-item dropdown-item-unread">
+                                <div class="dropdown-item-avatar">
+                                    <img alt="image" src="/stisla/img/avatar/avatar-1.png" class="rounded-circle">
+                                    <div class="is-online"></div>
+                                </div>
+                                <div class="dropdown-item-desc">
+                                    <b>Rocks</b>
+                                    <p>恭喜上线!</p>
+                                    <div class="time">10 小时前</div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="dropdown-footer text-center">
+                            <a href="#">查看所有 <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+                                                             class="nav-link notification-toggle nav-link-lg beep"><i
+                                class="far fa-bell"></i></a>
+                    <div class="dropdown-menu dropdown-list dropdown-menu-right">
+                        <div class="dropdown-header">通知
+                            <div class="float-right">
+                                <a href="#">标记为全部阅读</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-list-content dropdown-list-icons">
+                            <a href="#" class="dropdown-item dropdown-item-unread">
+                                <div class="dropdown-item-icon bg-primary text-white">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="dropdown-item-desc">
+                                    上线成功!
+                                    <div class="time text-primary">2 分钟前</div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="dropdown-footer text-center">
+                            <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown"
+                                        class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                        <img alt="image" src="/stisla/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                        <div class="d-sm-none d-lg-inline-block">${.UserName}</div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-title">5分钟前登录</div>
+                        <a href="features-profile.html" class="dropdown-item has-icon">
+                            <i class="far fa-user"></i> 修改资料
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/user/logout" class="dropdown-item has-icon text-danger">
+                            <i class="fas fa-sign-out-alt"></i> 注销登录
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="main-sidebar">
+            <aside id="sidebar-wrapper">
+                <div class="sidebar-brand">
+                    <a href="/dashboard">GOADMIN</a>
+                </div>
+                <div class="sidebar-brand sidebar-brand-sm">
+                    <a href="/dashboard">ADMIN</a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="menu-header">火热大盘走势图</li>
+                    <li class="nav-item">
+                        <a href="/dashboard" class="nav-link"><i class="fas fa-chart-line"></i><span>大盘走向</span></a>
+                    </li>
+                    <li class="menu-header">系统管理</li>
+                    <li class="nav-item">
+                        <a href="/sys/user/index" class="nav-link "><i class="far fa-user"></i>
+                            <span>管理员管理</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/sys/config/index" class="nav-link "><i class="fas fa-plug"></i>
+                            <span>参数管理</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/sys/oss/index" class="nav-link "><i class="fas fa-cloud-upload-alt"></i>
+                            <span>文件管理</span></a>
+                    </li>
+
+
+                </ul>
+
+                <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                    <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split">
+                        <i class="fas fa-rocket"></i> 起飞
+                    </a>
+                </div>
+            </aside>
+        </div>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>欢迎回来 &mdash; 梦想家</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    >
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/stisla/css/style.css">
+    <link rel="stylesheet" href="/stisla/css/components.css">
+</head>
+
+<body>
+<div id="app">
+    <section class="section">
+        <div class="d-flex flex-wrap align-items-stretch">
+            <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
+                <div class="p-4 m-3">
+                    <img src="/static/img/world.svg" alt="logo" width="80"
+                         class="shadow-light rounded-circle mb-5 mt-2">
+                    <h4 class="text-dark font-weight-normal">欢迎回来 <span class="font-weight-bold">梦想家</span></h4>
+                    <p class="text-muted">每一天都要为自己的梦想加油！</p>
+                    <form method="POST" action="#" class="needs-validation" id="login-form" novalidate="">
+                        <div class="form-group">
+                            <label for="mobile">手机号</label>
+                            <input id="mobile" type="mobile" class="form-control" name="mobile" tabindex="1" required
+                                   autofocus>
+                            <div class="invalid-feedback">
+                                请输入你的手机号
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="d-block">
+                                <label for="password" class="control-label">密码</label>
+                            </div>
+                            <input id="password" type="password" class="form-control" name="password" tabindex="2"
+                                   required>
+                            <div class="invalid-feedback">
+                                请输入密码
+                            </div>
+                        </div>
+
+                        <div class="form-group text-danger" id="msg">
+
+                        </div>
+                        <div class="form-group text-right">
+                            <a href="#" class="float-left mt-3">
+                                可能忘记密码了?
+                            </a>
+                            <button type="button" onclick="login()" class="btn btn-primary btn-lg btn-icon icon-right"
+                                    tabindex="4">
+                                登录
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom"
+                 data-background="/stisla/img/unsplash/login-bg.jpg">
+                <div class="absolute-bottom-left index-2">
+                    <div class="text-light p-5 pb-2">
+                        <div class="mb-5 pb-3">
+                            <h1 class="mb-2 display-4 font-weight-bold">你好！世界！</h1>
+                            <h5 class="font-weight-normal text-muted-transparent">快把我叫醒！ 活着总要创造点精彩！</h5>
+                        </div>
+                        Photo by Justin Kauffman on Unsplash
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- General JS Scripts -->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+<script src="/stisla/js/stisla.js"></script>
+
+<!-- JS Libraies -->
+
+<!-- Template JS File -->
+<script src="/stisla/js/scripts.js"></script>
+<script src="/stisla/js/custom.js"></script>
+
+<!-- Page Specific JS File -->
+
+<script>
+
+
+    function login() {
+        window.localStorage.removeItem("token")
+        var mobile = $('[name="mobile"]').val();
+        var password = $('[name="password"]').val();
+
+
+        if (mobile == '') {
+            $('[name="mobile"]').removeClass("is-valid")
+            $('[name="mobile"]').addClass("is-invalid")
+            return;
+        } else {
+            $('[name="mobile"]').removeClass("is-invalid")
+            $('[name="mobile"]').addClass("is-valids")
+        }
+
+        if (password == '') {
+            $('[name="password"]').removeClass("is-valid")
+            $('[name="password"]').addClass("is-invalid")
+            return;
+        } else {
+            $('[name="password"]').removeClass("is-invalid")
+            $('[name="password"]').addClass("is-valids")
+        }
+        jQuery.ajax({
+            type: 'POST',
+            url: '/login/submit',
+            data: {"mobile": mobile, password: password},
+            success: function (data) {
+                if (data.code == 0) {
+                    window.localStorage.setItem("token", data.data.token)
+                    window.top.location.href = "/dashboard";
+                } else {
+                    $('[name="password"]').val('');
+                    $("#msg").show("slow");
+                    $("#msg").html(data.msg);
+                }
+            },
+            error: function (html) {
+                var flag = (typeof console != 'undefined');
+                if (flag) console.log("服务器忙，提交数据失败，代码:" + html.status + "，请联系管理员！");
+                alert("服务器忙，提交数据失败，请联系管理员！");
+            }
+        })
+    }
+
+    <!-- jQuery 当键盘敲击【ENTER】键时，系统登录 -->
+    $(document).ready(function () {
+        $("#mobile").change(function(){
+            var mobile = $('[name="mobile"]').val();
+            if (mobile == '') {
+                $('[name="mobile"]').removeClass("is-valid")
+                $('[name="mobile"]').addClass("is-invalid")
+                return;
+            } else {
+                $('[name="mobile"]').removeClass("is-invalid")
+                $('[name="mobile"]').addClass("is-valids")
+            }
+            $("#msg").hide();
+        })
+        $("#password").change(function(){
+            if (password == '') {
+                var password = $('[name="password"]').val();
+                $('[name="password"]').removeClass("is-valid")
+                $('[name="password"]').addClass("is-invalid")
+                return;
+            } else {
+                $('[name="password"]').removeClass("is-invalid")
+                $('[name="password"]').addClass("is-valids")
+            }
+            $("#msg").hide();
+        })
+        $("body").keydown(function (event) {
+            if (event.which == 13) {
+                login();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

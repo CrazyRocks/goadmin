@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    ${include "layout/header.html" .}
+</head>
+
+${include "layout/nav.html" .}
+<div class="main-content" style="min-height: 490px;">
+    <section class="section" id="rrapp" v-cloak>
+        <div class="section-header">
+            <h1>文件管理</h1>
+            <div class="section-header-button" v-show="showList">
+                <a class="btn btn-primary" @click="edit"><i class="fa fa-cog"></i>&nbsp;上传配置</a>
+                <a class="btn btn-primary" id="upload"><i class=""></i>上传文件</a>
+            </div>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="/">首页</a></div>
+                <div class="breadcrumb-item"><a href="/sys/oss">文件管理</a></div>
+                <div class="breadcrumb-item"><a href="/sys/oss">列表</a></div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <div v-show="showList">
+                            <div class="card" id="page-card">
+                                <div class="card-header">
+                                    <h4>文件管理配置列表</h4>
+                                    <div class="card-header-form" id="toolbar">
+                                        <div class="input-group search">
+                                            <input type="text" class="form-control search-input" placeholder="查询">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-primary" id="search-btn" name="search"><i
+                                                            class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class=" ">
+                                        <div class="table table-striped">
+                                            <table id="table"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div v-show="!showList" class="card">
+                            <div class="card-header"><h4>{{title}}</h4></div>
+                            <div class="card-body">
+                                <div class="form-group row mb-4">
+                                    <div class="col-form-label text-md-right col-12 col-md-3 col-lg-3">域名</div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control" v-model="ParamValue.aliyunDomain"
+                                               placeholder="阿里云绑定的域名"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <div class="col-form-label text-md-right col-12 col-md-3 col-lg-3">路径前缀</div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control" v-model="ParamValue.aliyunPrefix"
+                                               placeholder="不设置默认为空"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <div class="col-form-label text-md-right col-12 col-md-3 col-lg-3">EndPoint</div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control" v-model="ParamValue.aliyunEndPoint"
+                                               placeholder="阿里云EndPoint"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <div class="col-form-label text-md-right col-12 col-md-3 col-lg-3">AccessKeyId</div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control" v-model="ParamValue.aliyunAccessKeyId"
+                                               placeholder="阿里云AccessKeyId"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <div class="col-form-label text-md-right col-12 col-md-3 col-lg-3">AccessKeySecret</div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control" v-model="ParamValue.aliyunAccessKeySecret"
+                                               placeholder="阿里云AccessKeySecret"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <div class="col-form-label text-md-right col-12 col-md-3 col-lg-3">BucketName</div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control" v-model="ParamValue.aliyunBucketName"
+                                               placeholder="阿里云BucketName"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-whitesmoke text-md-center">
+                                <input type="button" class="btn btn-primary" id="btnSaveOrUpdate"
+                                       data-loading-text="保存中..."
+                                       @click="saveConfig" value="确定"/>
+                                &nbsp;&nbsp;<input type="button" class="btn btn-warning" @click="reload"
+                                                   value="返回"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+${include "layout/footer.html" .}
+<script src="/plugins/ajaxupload/ajaxupload.js?_1573990362"></script>
+<script src="/modules/sys/oss.js?_1573990362"></script>
+</body>
+</html>

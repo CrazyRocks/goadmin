@@ -1,0 +1,31 @@
+url-path = ""
+
+# 应用系统设置
+[setting]
+    logpath = "/logs"
+    assest=""
+    cdn="https://static.fengfengdushu.com/"
+    domain=""
+
+
+# 数据库连接
+[database]
+   [[database.center]]
+        host     = "localhost"
+        port     = "3306"
+        user     = "root"
+        pass     = "Ytsnjzhq620"
+        name     = "goadmin"
+        type     = "mysql"
+        role     = "master"
+        charset  = "utf8"
+        priority = "1"
+        debug    = "false"
+
+# 缓存模式 1 gcache 2 gredis
+cache-mode = 2
+
+# Redis数据库配置
+[redis]
+  default = "127.0.0.1:6379,0"
+  cache   = "127.0.0.1:6379,1?idleTimeout=600"
