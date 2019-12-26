@@ -11,6 +11,7 @@
 2:修改config文件下的config<br/>
 3:请打开redis<br/>
 4: go run main.go<br/>
+5:账号：admin 密码:admin#1314<br/>
 打包等细节：查看gf手册<br/>
 
 
@@ -37,3 +38,8 @@
 
 感谢大家支持，有钱的撒几毛，没钱的点个赞，有问题的提issue<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/1225/172829_5408c413_1927330.jpeg "donate.jpg")
+
+感谢大佬<br/>
+| Name | Channel | Amount | Comment<br/>
+|---|---|--- | ---<br/>
+|李超|wechat|￥66.00 |<br/>
