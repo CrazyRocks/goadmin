@@ -6,12 +6,12 @@
 缓存:redis<br/>
 权限:token<br/>
 
-安装：
-1:数据库在:sql文件夹下
-2:修改config文件下的config
-3:请打开redis
-4: go run main.go
-打包等细节：查看gf手册
+安装：<br/>
+1:数据库在:sql文件夹下<br/>
+2:修改config文件下的config<br/>
+3:请打开redis<br/>
+4: go run main.go<br/>
+打包等细节：查看gf手册<br/>
 
 
 配套工具
