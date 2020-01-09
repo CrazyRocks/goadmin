@@ -41,10 +41,18 @@
 2：独家分享日活20万用户的全套代码<br/>
 3：独家分享如果用技术短时间获取百万用户 <br/>
 开源：<br/>
+关于APP:
 1：全套视频APP，上线3个月日活5万+ [https://gitee.com/rocks/zhanglubao](https://gitee.com/rocks/zhanglubao)<br/>
 2: 全自动全栈代码生成器：[https://gitee.com/crazyrocks/goadmin](https://gitee.com/crazyrocks/goadmin)<br/>
 3: 即将分享1个月打造日活10万+微信小程序<br/>
 4: 关于安卓市场，快速上榜工具<br/>
+
+关于百度：<br/>
+1：如何做到1个月百度流量破万<br/>
+2：如何做到1个月小程序日活20万<br/>
+
+关于Google,直接上图<br/>
+
  **全是野路子** <br/>
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0109/151918_f6733481_620187.jpeg "qrcode_for_gh_221095e67f12_1280.jpg")<br/>
