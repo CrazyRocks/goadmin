@@ -44,8 +44,10 @@
 1：全套视频APP，上线3个月日活5万+ [https://gitee.com/rocks/zhanglubao](https://gitee.com/rocks/zhanglubao)
 2: 全自动全栈代码生成器：[https://gitee.com/crazyrocks/goadmin](https://gitee.com/crazyrocks/goadmin)
 3: 即将分享1个月打造日活10万+微信小程序
-4: 关于安卓市场，快速上榜工具（曾经1夜排行榜前三）
+4: 关于安卓市场，快速上榜工具
  **全是野路子** 
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0109/151918_f6733481_620187.jpeg "qrcode_for_gh_221095e67f12_1280.jpg")
  
 https://gitee.com/rocks/zhanglubao
 感谢大家支持，有钱的撒几毛，没钱的点个赞，有问题的提issue<br/>
