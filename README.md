@@ -36,22 +36,18 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/1225/172758_27d955f0_1927330.jpeg "6.jpg")<br/>
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/1225/172818_dd46545a_1927330.jpeg "7.jpg")<br/>
 
- **关注我，带你们技术搞流量，技术搞流量，轻松百万流量**
-1：独家分享独立开发者1000万用户的操作
-2：独家分享日活20万用户的全套代码
-3：独家分享如果用技术短时间获取百万用户 
-开源：
-1：全套视频APP，上线3个月日活5万+ [https://gitee.com/rocks/zhanglubao](https://gitee.com/rocks/zhanglubao)
-2: 全自动全栈代码生成器：[https://gitee.com/crazyrocks/goadmin](https://gitee.com/crazyrocks/goadmin)
-3: 即将分享1个月打造日活10万+微信小程序
-4: 关于安卓市场，快速上榜工具
- **全是野路子** 
+ **关注我，带你们技术搞流量，技术搞流量，轻松百万流量**<br/>
+1：独家分享独立开发者1000万用户的操作<br/>
+2：独家分享日活20万用户的全套代码<br/>
+3：独家分享如果用技术短时间获取百万用户 <br/>
+开源：<br/>
+1：全套视频APP，上线3个月日活5万+ [https://gitee.com/rocks/zhanglubao](https://gitee.com/rocks/zhanglubao)<br/>
+2: 全自动全栈代码生成器：[https://gitee.com/crazyrocks/goadmin](https://gitee.com/crazyrocks/goadmin)<br/>
+3: 即将分享1个月打造日活10万+微信小程序<br/>
+4: 关于安卓市场，快速上榜工具<br/>
+ **全是野路子** <br/>
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0109/151918_f6733481_620187.jpeg "qrcode_for_gh_221095e67f12_1280.jpg")
- 
-https://gitee.com/rocks/zhanglubao
-感谢大家支持，有钱的撒几毛，没钱的点个赞，有问题的提issue<br/>
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1225/172829_5408c413_1927330.jpeg "donate.jpg")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0109/151918_f6733481_620187.jpeg "qrcode_for_gh_221095e67f12_1280.jpg")<br/>
 
 感谢大佬<br/>
 | Name | Channel | Amount | Comment<br/>
