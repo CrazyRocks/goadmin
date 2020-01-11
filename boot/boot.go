@@ -22,7 +22,7 @@ func init() {
 		LoginAfterFunc:   controller.LoginAfter,
 		LogoutPath:       "/user/logout",
 		LogoutBeforeFunc: controller.LogoutBefore,
-		AuthPaths:        g.SliceStr{"/dashboard", "/sys/*", "/novel/*", "/finance/*", "/site/*", "/spider/*"},
+		AuthPaths:        g.SliceStr{"/dashboard", "/sys/*"},
 	}
 	base.Token.Start()
 }

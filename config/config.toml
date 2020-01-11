@@ -4,7 +4,6 @@ url-path = ""
 [setting]
     logpath = "/logs"
     assest=""
-    cdn="https://static.fengfengdushu.com/"
     domain=""
 
 
