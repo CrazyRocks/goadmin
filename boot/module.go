@@ -1,9 +1,9 @@
 package boot
 
 import (
-	"novelcenter/module/home"
-	"novelcenter/module/public"
-	"novelcenter/module/sys"
+	"goadmin/module/home"
+	"goadmin/module/public"
+	"goadmin/module/sys"
 )
 
 func InitModules() {

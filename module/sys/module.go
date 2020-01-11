@@ -8,7 +8,7 @@
  */
 package sys
 
-import "novelcenter/module/sys/config"
+import "goadmin/module/sys/config"
 
 func InitModule() {
 	config.InitRouter()

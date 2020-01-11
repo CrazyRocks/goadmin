@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gogf/gf/frame/g"
-	_ "novelcenter/boot"
+	_ "goadmin/boot"
 )
 
 func main() {

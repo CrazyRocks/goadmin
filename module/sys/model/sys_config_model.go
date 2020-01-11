@@ -13,8 +13,8 @@ import (
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/os/glog"
 	"github.com/gogf/gf/util/gconv"
-	"novelcenter/utils/base"
-	"novelcenter/utils/tools"
+	"goadmin/utils/base"
+	"goadmin/utils/tools"
 )
 
 import (

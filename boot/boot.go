@@ -4,9 +4,9 @@ import (
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/os/glog"
 	"github.com/gogf/gf/os/gsession"
-	"novelcenter/middleware/rtoken"
-	"novelcenter/module/public/controller"
-	"novelcenter/utils/base"
+	"goadmin/middleware/rtoken"
+	"goadmin/module/public/controller"
+	"goadmin/utils/base"
 	"time"
 )
 

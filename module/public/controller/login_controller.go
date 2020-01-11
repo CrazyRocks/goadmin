@@ -5,10 +5,10 @@ import (
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
 	"github.com/gogf/gf/os/glog"
-	"novelcenter/middleware/rtoken"
-	"novelcenter/module/public/model"
-	"novelcenter/utils/base"
-	"novelcenter/utils/bean"
+	"goadmin/middleware/rtoken"
+	"goadmin/module/public/model"
+	"goadmin/utils/base"
+	"goadmin/utils/bean"
 )
 
 // Login 登录页面

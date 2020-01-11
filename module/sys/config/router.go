@@ -11,7 +11,7 @@ package config
 import (
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
-	"novelcenter/module/sys/controller"
+	"goadmin/module/sys/controller"
 )
 
 func InitRouter() {

@@ -14,8 +14,8 @@ import (
 	"github.com/gogf/gf/net/ghttp"
 	"github.com/gogf/gf/os/glog"
 	"github.com/gogf/gf/util/gconv"
-	"novelcenter/module/sys/model"
-	"novelcenter/utils/base"
+	"goadmin/module/sys/model"
+	"goadmin/utils/base"
 )
 
 type SysConfigController struct {

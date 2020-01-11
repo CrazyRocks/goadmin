@@ -17,9 +17,9 @@ import (
 	"github.com/gogf/gf/os/gfile"
 	"github.com/gogf/gf/os/glog"
 	"github.com/gogf/gf/util/gconv"
-	"novelcenter/module/sys/model"
-	"novelcenter/utils/base"
-	"novelcenter/utils/tools"
+	"goadmin/module/sys/model"
+	"goadmin/utils/base"
+	"goadmin/utils/tools"
 )
 
 type SysOssController struct {

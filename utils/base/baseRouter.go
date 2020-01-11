@@ -5,9 +5,9 @@ import (
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
 	"github.com/gogf/gf/os/glog"
-	"novelcenter/middleware/rtoken"
-	"novelcenter/utils/bean"
-	"novelcenter/utils/resp"
+	"goadmin/middleware/rtoken"
+	"goadmin/utils/bean"
+	"goadmin/utils/resp"
 )
 
 var Token *rtoken.RfToken

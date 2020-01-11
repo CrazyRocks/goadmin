@@ -1,6 +1,6 @@
 package home
 
-import "novelcenter/module/home/config"
+import "goadmin/module/home/config"
 
 func InitModule() {
 	config.InitRouter()

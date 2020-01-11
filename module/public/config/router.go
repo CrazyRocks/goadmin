@@ -2,10 +2,10 @@ package config
 
 import (
 	"github.com/gogf/gf/frame/g"
-	"novelcenter/module/public/controller"
+	"goadmin/module/public/controller"
 )
 
-func InitRouter()  {
+func InitRouter() {
 	urlPath := g.Config().GetString("url-path")
 	s := g.Server()
 	// 首页
