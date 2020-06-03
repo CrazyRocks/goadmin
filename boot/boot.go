@@ -13,18 +13,6 @@ import (
 func init() {
 	InitConfig()
 	InitModules()
-	// 启动rtoken
-	base.Token = &rtoken.RfToken{
-		Timeout:          100 * 1000,
-		CacheMode:        2,
-		LoginPath:        "/login/submit",
-		LoginBeforeFunc:  controller.LoginSubmit,
-		LoginAfterFunc:   controller.LoginAfter,
-		LogoutPath:       "/user/logout",
-		LogoutBeforeFunc: controller.LogoutBefore,
-		AuthPaths:        g.SliceStr{"/dashboard", "/sys/*"},
-	}
-	base.Token.Start()
 }
 
 // 用于应用初始化。
@@ -48,6 +36,19 @@ func InitConfig() {
 	logpath := c.GetString("setting.logpath")
 	_ = glog.SetPath(logpath)
 	glog.SetStdoutPrint(true)
+
+	// 启动rtoken
+	base.Token = &rtoken.RfToken{
+		Timeout:          100 * 1000,
+		CacheMode:        c.GetInt8("cache-mode"),
+		LoginPath:        "/login/submit",
+		LoginBeforeFunc:  controller.LoginSubmit,
+		LoginAfterFunc:   controller.LoginAfter,
+		LogoutPath:       "/user/logout",
+		LogoutBeforeFunc: controller.LogoutBefore,
+		AuthPaths:        g.SliceStr{"/dashboard", "/sys/*"},
+	}
+	base.Token.Start()
 
 	s.SetLogPath(logpath)
 	s.SetErrorLogEnabled(true)
